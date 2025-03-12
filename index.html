@@ -1,1 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rakotomamonjy Faharetana - WDD 231 - Web Frontend Development</title>
+    <meta name="author" content="Faharetana">
+    <meta name="description"
+        content="This is the homepage of Rakotomamonjy Faharetana for the WDD 231 - Web Frontend Development">
+    <meta property="og:title" content="Faharetana's Homepage for WDD 231" />
+    <meta property="og:type" content="Website" />
+    <meta property="og:image" content="https://faharetana-rkt.github.io/wdd230/images/antsirabe.jpg" />
+    <meta property="og:url" content="https://faharetana-rkt.github.io/wdd230/" />
+    <link rel="stylesheet" type="text/css" href="styles/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="styles/small.css" />
+    <link rel="stylesheet" type="text/css" href="styles/larger.css" />
+    <link rel="icon" href="images/favicon.ico" />
+</head>
+
+<body>
+    <header>
+        <img id="facePhoto" src="images/photo-me.webp" alt="Picture of Faharetana">
+        <h1>Rakotomamonjy Faharetana</h1>
+    </header>
+    <nav>
+        <button id="menu"></button>
+        <a href="index.html" class="navLink">Home</a>
+        <a href="" class="navLink">Chamber</a>
+        <a href="https://github.com/faharetana-rkt" class="navLink">GitHub Profile</a>
+        <a href="https://www.linkedin.com/in/rfaharetana/"
+            class="navLink">LinkedIn</a>
+    </nav>
+    <main>
+        <h1>Home</h1>
+        <section class="course-work">
+            <h2>Course Work</h2>
+            <li>
+                <ol></ol>
+                <ol></ol>
+                <ol></ol>
+            </li>
+        </section>
+        <section class="hero">
+            <h2>Tamatave, Madagascar</h2>
+            <img href="images/velo-pousse-tamatave.webp" alt="Velo pousse image in Tamatave">
+            <p class="hero-label">Vélo Pousse</p>
+        </section>
+        <section class="certificate">
+            <h2>Web and Computer Programming Certificate</h3>
+            <div class="course-selector">
+                <button id="course-all">All</button>
+                <button id="course-cse">CSE</button>
+                <button id="course-wdd">WDD</button>
+            </div>
+            <div class="courses">
+                <button>CSE 110</button>
+                <button>CSE 111</button>
+                <button>CSE 210</button>
+                <button>WDD 130</button>
+                <button>WDD 131</button>
+                <button>WDD 230</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentYear"></span></p>
+        <p>💻 Rakotomamonjy Faharetana 💻</p>
+        <p>Madagascar <img src="images/madagascar.png" alt="Madagascar flag" id="flag"></p>
+        <p class="lastModified"></p>
+    </footer>
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/visits.js"></script>
+    <script src="scripts/links.js"></script>
+    <script src="scripts/weather.js"></script>
+</body>
+
+</html>
