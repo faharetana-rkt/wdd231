@@ -1,0 +1,33 @@
+{
+    "familyName": "Rakotomamonjy",
+    "dateMoved": "11/03/2024",
+    "members": 5,
+    "bishopricVisit": true,
+    "membersDetail": [
+        {
+            "name": "Fiorenana",
+            "gender": "male",
+            "birthdate": "01/07/1997"
+        },
+        {
+            "name": "Faharetana",
+            "gender": "male",
+            "birthdate": "16/03/1995"
+        },
+        {
+            "name": "Alfred",
+            "gender": "male",
+            "birthdate": "30/06/1964"
+        },
+        {
+            "name": "Fifaliana",
+            "gender": "female",
+            "birthdate": "25/05/2002"
+        },
+        {
+            "name": "Hanta",
+            "gender": "female",
+            "birthdate": "05/05/1966"
+        }
+    ]
+}
