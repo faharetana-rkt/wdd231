@@ -4,3 +4,196 @@ body {
     margin: 0;
     font-family: "Quattrocento Sans";
 }
+
+header {
+    background: #800f2f;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    margin-top: 5px;
+}
+
+#facePhoto {
+    height: 170px;
+    border-radius: 10px;
+    margin-right: 30px;
+    box-shadow: 10px 10px 20px rgba(237, 242, 244, 0.5);
+}
+
+.header-name {
+    font-size: 1.5rem;
+    color: white;
+    font-weight: bold;
+    font-family: Quattrocento;
+}
+
+nav {
+    background-color: #2B2D42;
+    padding-left: 15%;
+    padding-right: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+/*hamburger button*/
+#menu::before {
+    content: "☰";
+}
+
+/*closing button*/
+#menu.open::before {
+    content: "X";
+}
+
+#menu {
+    font-family: monospace;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    position: absolute;
+    top: 1rem;
+    right: 10px;
+}
+
+.navLink {
+    display: none;
+    color: white;
+    text-decoration: none;
+    font-size: 1.3rem;
+    padding: 10px
+}
+
+.navLink:hover {
+    background: white;
+    color: #2B2D42;
+}
+
+.navLink.active {
+    text-decoration: overline;
+}
+
+.open a {
+    display: block;
+}
+
+main {
+    width: 80%;
+    margin: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.course-work h2 {
+    background-color: #D90429;
+    color: white;
+    border-radius: 10px 10px 0 0;
+    padding: 10px;
+    text-align: center;
+}
+
+.course-work li {
+    margin: 10px;
+}
+
+.hero h2 {
+    background-color: #D90429;
+    color: white;
+    border-radius: 10px 10px 0 0;
+    padding: 10px;
+    text-align: center;
+}
+
+.hero img {
+    display: block;
+    margin: 10px auto;
+    max-width: 100%;
+    height: auto;
+}
+
+.hero-label {
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.certificate h2 {
+    background-color: #D90429;
+    color: white;
+    border-radius: 10px 10px 0 0;
+    padding: 10px;
+    text-align: center;
+}
+
+.course-selector {
+    height: 50px;
+    margin: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-bottom: 2px solid #2B2D42;
+    padding-bottom: 15px;
+}
+
+.course-selector button {
+    font-weight: bolder;
+    background-color: #2B2D42;
+    color: white;
+    border-radius: 5px;
+    width: 175px;
+    height: 50px;
+    margin: 10px;
+    font-size: 1.2rem;
+}
+
+.courses {
+    display: flex;
+    flex-direction: column;
+}
+
+.courses div {
+    margin: 10px;
+    height: 50px;
+    font-weight: bolder;
+    border-radius: 7.5px;
+    font-size: 1.3rem;
+    background-color: #EDF2F4;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    text-align: center; 
+    border: 1px solid black;
+}
+
+.courses .finished {
+    background-color: #ffcdb2;
+}
+
+footer {
+    background: #800f2f;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 20px;
+    color: white;
+    font-size: 1.3rem;
+}
+
+.country {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#flag {
+    height: 50px;
+    margin-left: 10px;
+}
+
+.lastModified {
+    color: #fcf300;
+}

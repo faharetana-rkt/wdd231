@@ -24,30 +24,31 @@
     <link rel="stylesheet" type="text/css" href="styles/small.css" />
     <link rel="stylesheet" type="text/css" href="styles/larger.css" />
     <link rel="icon" href="images/favicon.ico"/>
+    <script src="scripts/script.js" defer></script>
 </head>
 
 <body>
     <header>
         <img id="facePhoto" src="images/photo-me.webp" alt="Picture of Faharetana">
-        <h1>Rakotomamonjy Faharetana</h1>
+        <span class="header-name">Rakotomamonjy Faharetana</span>
     </header>
     <nav>
         <button id="menu"></button>
         <a href="index.html" class="navLink">Home</a>
         <a href="" class="navLink">Chamber</a>
-        <a href="https://github.com/faharetana-rkt" class="navLink">GitHub Profile</a>
+        <a href="https://github.com/faharetana-rkt" class="navLink" target="_blank">GitHub Profile</a>
         <a href="https://www.linkedin.com/in/rfaharetana/"
-            class="navLink">LinkedIn</a>
+            class="navLink" target="_blank">LinkedIn</a>
     </nav>
     <main>
         <h1>Home</h1>
         <section class="course-work">
             <h2>Course Work</h2>
-            <li>
-                <ol></ol>
-                <ol></ol>
-                <ol></ol>
-            </li>
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
         </section>
         <section class="hero">
             <h2>Tamatave, Madagascar</h2>
@@ -62,25 +63,20 @@
                 <button id="course-wdd">WDD</button>
             </div>
             <div class="courses">
-                <button>CSE 110</button>
-                <button>CSE 111</button>
-                <button>CSE 210</button>
-                <button>WDD 130</button>
-                <button>WDD 131</button>
-                <button>WDD 230</button>
+                
             </div>
         </section>
     </main>
     <footer>
-        <p>&copy; <span id="currentYear"></span></p>
-        <p>💻 Rakotomamonjy Faharetana 💻</p>
-        <p>Madagascar <img src="images/madagascar.png" alt="Madagascar flag" id="flag"></p>
+        <div class="footer-para">
+            <p><span id="currentYear"></span></p>
+            <p>💻 Rakotomamonjy Faharetana 💻</p>
+            <div class="country">
+                <p>Madagascar</p>
+                <img src="images/madagascar.png" alt="Madagascar flag" id="flag">
+            </div>
+            </div>
         <p class="lastModified"></p>
     </footer>
-    <script src="scripts/getdates.js"></script>
-    <script src="scripts/visits.js"></script>
-    <script src="scripts/links.js"></script>
-    <script src="scripts/weather.js"></script>
 </body>
-
 </html>
