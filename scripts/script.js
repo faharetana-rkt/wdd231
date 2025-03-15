@@ -109,18 +109,59 @@ const courses = [
 ]
 
 // Course rendering
-courses.forEach(course => {
-	const div = document.createElement("div");
-	div.innerHTML = `${course.subject} ${course.number}`;
-	const parent = document.querySelector(".courses");
-	// Adding class finished in finished courses
-	if(course.completed === true) {
-		div.classList.add("finished");
-	}
-	parent.appendChild(div);
-})
+renderCourse(courses);;
+renderTotal(getTotalCredit(courses));
 
 // Button filtered button
 const allButton = document.querySelector("#course-all");
 const cseButton = document.querySelector("#course-cse");
 const wddButton = document.querySelector("#course-wdd");
+
+// Function for rendering the courses in the page
+function renderCourse(courses) {
+    courses.forEach(course => {
+        const div = document.createElement("div");
+        div.innerHTML = `${course.subject} ${course.number}`;
+        const parent = document.querySelector(".courses");
+        // Adding class finished in finished courses
+        if(course.completed === true) {
+            div.classList.add("finished");
+        }
+        parent.appendChild(div);
+    })
+}
+
+// Function to return the sum of the credits
+function getTotalCredit(courses) {
+    const total = courses.reduce((acc, course) => acc + course.credits, 0);
+    return total;
+}
+
+// Function to render the Total number of credits
+function renderTotal(total) {
+    const div = document.createElement("div");
+    div.innerHTML = `Total of credits: ${total}`;
+    div.classList.add("total");
+    const parent = document.querySelector(".courses");
+    parent.appendChild(div);
+}
+
+allButton.addEventListener("click", () => {
+    document.querySelector(".courses").innerHTML = "";
+    renderCourse(courses);
+    renderTotal(getTotalCredit(courses));
+});
+
+cseButton.addEventListener("click", () => {
+    document.querySelector(".courses").innerHTML = "";
+    const filteredCourses = courses.filter(course => course.subject === "CSE");
+    renderCourse(filteredCourses);
+    renderTotal(getTotalCredit(filteredCourses));
+});
+
+wddButton.addEventListener("click", () => {
+    document.querySelector(".courses").innerHTML = "";
+    const filteredCourses = courses.filter(course => course.subject === "WDD");
+    renderCourse(filteredCourses);
+    renderTotal(getTotalCredit(filteredCourses));
+});

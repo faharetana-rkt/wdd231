@@ -43,6 +43,10 @@
         grid-template-columns: 1fr 1fr 1fr;
     }
 
+    .total {
+        grid-column: 2/3;
+    }
+
     .course-work, .certificate, .hero {
         border-radius: 10px 10px 0 0;
         box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);

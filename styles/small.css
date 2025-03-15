@@ -173,6 +173,10 @@ main {
     background-color: #ffcdb2;
 }
 
+.courses .total {
+    background: #ffee70;
+}
+
 footer {
     background: #800f2f;
     text-align: center;
