@@ -39,26 +39,29 @@ async function getProphetsData() {
     return data.prophets;
 }
 
-const prophets = getProphetsData();
 const allButton = document.querySelector("#all");
 const utahButton = document.querySelector("#utah");
 const outsideButton = document.querySelector("#outside-us");
-const livedLongButton = document.querySelector("#lived95+");
-const childrenButton = document.querySelector("#children10+");
-const presidentButton = document.querySelector("#president15+");
+const livedLongButton = document.querySelector("#lived95plus");
+const childrenButton = document.querySelector("#children10plus");
+const presidentButton = document.querySelector("#president15plus");
 
-allButton.addEventListener("click", () => {
+allButton.addEventListener("click", async () => {
+    const prophets = await getProphetsData();
+    console.table(prophets);
     document.querySelector("#cards").innerHTML = "";
     displayProphets(prophets);
 })
 
-utahButton.addEventListener("click", () => {
+utahButton.addEventListener("click", async () => {
+    const prophets = await getProphetsData();
     document.querySelector("#cards").innerHTML = "";
     const filteredProphets = prophets.filter(prophet => prophet.birthplace.toLowerCase() === "utah");
     displayProphets(filteredProphets);
 })
 
-outsideButton.addEventListener("click", () => {
+outsideButton.addEventListener("click", async () => {
+    const prophets = await getProphetsData();
     document.querySelector("#cards").innerHTML = "";
     const filteredProphets = prophets.filter(prophet => prophet.birthplace.toLowerCase() === "england");
     displayProphets(filteredProphets);
@@ -66,13 +69,28 @@ outsideButton.addEventListener("click", () => {
 
 function calculateAge (birthDateString, deathDateString) {
     let birthDate = new Date(birthDateString);
-    let deathDate = deathDateString ? new Date(deathDateString) : newDate();
-    
-
+    let deathDate = deathDateString ? new Date(deathDateString) : new Date();
+    let age = deathDate.getFullYear() - birthDate.getFullYear();
+    return age;
 }
 
-livedLongButton.addEventListener("click", () => {
+livedLongButton.addEventListener("click", async () => {
+    const prophets = await getProphetsData();
     document.querySelector("#cards").innerHTML = "";
-    const filteredProphets = prophets.filter(prophet => prophet.birthplace.toLowerCase() === "utah");
+    const filteredProphets = prophets.filter(prophet => calculateAge(prophet.birthdate, prophet.death) >= 95);
+    displayProphets(filteredProphets);
+})
+
+childrenButton.addEventListener("click", async () => {
+    const prophets = await getProphetsData();
+    document.querySelector("#cards").innerHTML = "";
+    const filteredProphets = prophets.filter(prophet => prophet.numofchildren > 10);
+    displayProphets(filteredProphets);
+})
+
+presidentButton.addEventListener("click", async () => {
+    const prophets = await getProphetsData();
+    document.querySelector("#cards").innerHTML = "";
+    const filteredProphets = prophets.filter(prophet => prophet.length > 15);
     displayProphets(filteredProphets);
 })
