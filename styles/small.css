@@ -60,6 +60,7 @@ nav {
     background: none;
     border: none;
     color: white;
+    cursor: pointer;
 }
 
 .navLink {
@@ -149,6 +150,7 @@ main {
     height: 50px;
     margin: 10px;
     font-size: 1.2rem;
+    cursor: pointer;
 }
 
 .courses {
