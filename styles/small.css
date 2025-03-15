@@ -57,6 +57,9 @@ nav {
     position: absolute;
     top: 1rem;
     right: 10px;
+    background: none;
+    border: none;
+    color: white;
 }
 
 .navLink {
