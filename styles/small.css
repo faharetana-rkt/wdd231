@@ -29,16 +29,6 @@ h1 {
     font-family: Quattrocento;
 }
 
-nav {
-    background-color: #2B2D42;
-    padding-left: 15%;
-    padding-right: 15%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-weight: bold;
-}
 
 /*hamburger button*/
 #menu::before {
@@ -63,25 +53,45 @@ nav {
     cursor: pointer;
 }
 
-.navLink {
-    display: none;
-    color: white;
-    text-decoration: none;
-    font-size: 1.3rem;
-    padding: 10px
+nav {
+    display: grid;
+    grid-template-rows: 0fr; 
+    height: 0;
+    background-color: #2B2D42;
+    transition: grid-template-rows 0.5s ease-out;
 }
 
-.navLink:hover {
+nav ul.navLink {
+    overflow: hidden;
+}
+
+nav.open {
+    grid-template-rows: 1fr; 
+    height: auto;
+}
+
+.navLink {
+    list-style-type: none;
+}
+
+.navLink a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    font-size: 1.3rem;
+}
+
+.navLink li {
+    padding: 10px;
+}
+
+.navLink a:hover {
     background: white;
     color: #2B2D42;
 }
 
-.navLink.active {
+.link.active {
     text-decoration: overline;
-}
-
-.open a {
-    display: block;
 }
 
 main {
