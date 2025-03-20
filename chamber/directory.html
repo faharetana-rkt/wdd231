@@ -8,24 +8,83 @@
     <meta name="description"
         content="This is the directory page of the Chamber of Commerce Website of Toamasina">
     <!-- Facebook meta tags -->
-    <meta property="og:title" content="Faharetana's Directory page for the Chamber of Commerce of Toamasina" />
-    <meta property="og:type" content="Website" />
-    <meta property="og:image" content="https://faharetana-rkt.github.io/wdd231/chamber/images/city-overview.webp" />
-    <meta property="og:url" content="https://faharetana-rkt.github.io/wdd231/" />
-    <meta property="og:description" content="This is the directory page of the Chamber of Commerce of Toamasina"/>
-    <meta property="og:image:alt" content="Birdview of the city of Toamasina"/>
+    <meta property="og:title" content="Faharetana's Directory page for the Chamber of Commerce of Toamasina">
+    <meta property="og:type" content="Website">
+    <meta property="og:image" content="https://faharetana-rkt.github.io/wdd231/chamber/images/city-overview.webp">
+    <meta property="og:url" content="https://faharetana-rkt.github.io/wdd231/">
+    <meta property="og:description" content="This is the directory page of the Chamber of Commerce of Toamasina">
+    <meta property="og:image:alt" content="Birdview of the city of Toamasina">
     <!-- Twitter meta tags -->
-    <meta property="twitter:title" content="Faharetana's Directory page for the Chamber of Commerce of Toamasina" />
-    <meta property="twitter:description" content="This is the directory page of the Chamber of Commerce of Toamasina"/>
-    <meta property="twitter:image" content="https://faharetana-rkt.github.io/wdd231/chamber/images/city-overview.webp"/>
-    <meta property="twitter:card" content="summary_large_image"/>
-    <link rel="stylesheet" type="text/css" href="styles/normalize.css" />
-    <link rel="stylesheet" type="text/css" href="styles/small.css" />
-    <link rel="stylesheet" type="text/css" href="styles/larger.css" />
-    <link rel="icon" href="images/favicon.ico"/>
+    <meta property="twitter:title" content="Faharetana's Directory page for the Chamber of Commerce of Toamasina">
+    <meta property="twitter:description" content="This is the directory page of the Chamber of Commerce of Toamasina">
+    <meta property="twitter:image" content="https://faharetana-rkt.github.io/wdd231/chamber/images/city-overview.webp">
+    <meta property="twitter:card" content="summary_large_image">
+    <!--Preconnect to google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Dosis:wght@200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles/normalize.css">
+    <link rel="stylesheet" type="text/css" href="styles/small.css">
+    <link rel="stylesheet" type="text/css" href="styles/larger.css">
+    <link rel="icon" href="images/favicon.ico">
     <script src="scripts/script.js" defer></script>
 </head>
 <body>
-    
+    <header>
+        <div class="chamber-logo">
+            <img id="anchor-logo" src="images/anchor.webp" alt="Picture of an anchor">
+            <span class="city-name">Toamasina</span>
+            <span class="description">Chamber of Commerce</span>
+        </div>
+        <nav id="animateme">
+            <ul class="navLink">
+                <li><a href="index.html" class="link">Home</a></li>
+                <li><a href="" class="link">Directory</a></li>
+                <li><a href="" class="link">Join</a></li>
+                <li><a href="" class="link">Discover</a></li>
+            </ul>
+        </nav>
+        <button id="menu" aria-label="Toggle navigation menu"></button>
+    </header>
+    <main>
+        <div class="chamber-hero">
+            <img src="images/city-overview.webp" alt="Birdview of the city of Toamasina">
+            <button id="tickets" aria-label="Creates ticket">Keynote Tickets</button>
+        </div>
+        <h1>Home</h1>
+        <section class="chamber-events">
+            <h2>Events</h2>
+            <div></div>
+        </section>
+        <section class="weather">
+            <h2>Current Weather</h2>
+        </section>
+        <section class="forecast">
+            <h2>Weather Forecast</h2>
+        </section>
+        <section class="businesses">
+
+        </section>
+    </main>
+    <footer>
+        <div class="chamber-info">
+            <h3>Toamasina Chamber of Commerce</h3>
+            <p>4 Rue du Commerce BP</p>
+            <p>108-Ampasimazava, Toamasina</p>
+            <p>ccit.officiel@gmail.com</p>
+            <p>+261 34 20 625 34</p>
+        </div>
+        <div class="socials">
+            <a href="https://www.youtube.com" target="_blank"><img src="images/yt-logo.png" alt="youtube logo"></a>
+            <a href="https://x.com" target="_blank"><img src="images/x-logo.png" alt="X logo"></a>
+            <a href="https://fr.linkedin.com" target="_blank"><img src="images/linkedin-logo.png" alt="linked in logo"></a>
+        </div>
+        <div class="class-info">
+            <p>WDD 231 Class Project</p>
+            <p>Rakotomamonjy Faharetana</p>
+            <p><span id="currentYear"></span> Chamber of Commerce</p>
+            <span id="lastModified"></span>
+        </div>
+    </footer>
 </body>
 </html>
