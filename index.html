@@ -9,21 +9,25 @@
     <meta name="description"
         content="This is the homepage of Rakotomamonjy Faharetana for the WDD 231 - Web Frontend Development">
     <!-- Facebook meta tags -->
-    <meta property="og:title" content="Faharetana's Homepage for WDD 231" />
-    <meta property="og:type" content="Website" />
-    <meta property="og:image" content="https://faharetana-rkt.github.io/wdd231/images/velo-pousse-tamatave.webp" />
-    <meta property="og:url" content="https://faharetana-rkt.github.io/wdd231/" />
-    <meta property="og:description" content="This is the homepage of Rakotomamonjy Faharetana for the WDD 231 - Web Frontend Development"/>
-    <meta property="og:image:alt" content="Velo pousse image in Tamatave"/>
+    <meta property="og:title" content="Faharetana's Homepage for WDD 231">
+    <meta property="og:type" content="Website">
+    <meta property="og:image" content="https://faharetana-rkt.github.io/wdd231/images/velo-pousse-tamatave.webp">
+    <meta property="og:url" content="https://faharetana-rkt.github.io/wdd231/">
+    <meta property="og:description" content="This is the homepage of Rakotomamonjy Faharetana for the WDD 231 - Web Frontend Development">
+    <meta property="og:image:alt" content="Velo pousse image in Tamatave">
     <!-- Twitter meta tags -->
-    <meta property="twitter:title" content="Faharetana's Homepage for WDD 231" />
-    <meta property="twitter:description" content="This is the homepage of Rakotomamonjy Faharetana for the WDD 231 - Web Frontend Development"/>
-    <meta property="twitter:image" content="https://faharetana-rkt.github.io/wdd231/images/velo-pousse-tamatave.webp"/>
-    <meta property="twitter:card" content="summary_large_image"/>
-    <link rel="stylesheet" type="text/css" href="styles/normalize.css" />
-    <link rel="stylesheet" type="text/css" href="styles/small.css" />
-    <link rel="stylesheet" type="text/css" href="styles/larger.css" />
-    <link rel="icon" href="images/favicon.ico"/>
+    <meta property="twitter:title" content="Faharetana's Homepage for WDD 231">
+    <meta property="twitter:description" content="This is the homepage of Rakotomamonjy Faharetana for the WDD 231 - Web Frontend Development">
+    <meta property="twitter:image" content="https://faharetana-rkt.github.io/wdd231/images/velo-pousse-tamatave.webp">
+    <meta property="twitter:card" content="summary_large_image">
+    <!--Preconnect to google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quattrocento+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Quattrocento:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles/normalize.css">
+    <link rel="stylesheet" type="text/css" href="styles/small.css">
+    <link rel="stylesheet" type="text/css" href="styles/larger.css">
+    <link rel="icon" href="images/favicon.ico">
     <script src="scripts/script.js" defer></script>
 </head>
 
@@ -31,14 +35,16 @@
     <header>
         <img id="facePhoto" src="images/photo-me.webp" alt="Picture of Faharetana">
         <span class="header-name">Rakotomamonjy Faharetana</span>
+        <button id="menu" aria-label="Toggle navigation menu"></button>
     </header>
-    <nav>
-        <button id="menu"></button>
-        <a href="index.html" class="navLink">Home</a>
-        <a href="" class="navLink">Chamber</a>
-        <a href="https://github.com/faharetana-rkt" class="navLink" target="_blank">GitHub Profile</a>
-        <a href="https://www.linkedin.com/in/rfaharetana/"
-            class="navLink" target="_blank">LinkedIn</a>
+    <nav id="animateme">
+        <ul class="navLink">
+            <li><a href="index.html" class="link">Home</a></li>
+            <li><a href="" class="link">Chamber</a></li>
+            <li><a href="https://github.com/faharetana-rkt" target="_blank" class="link">GitHub Profile</a></li>
+            <li><a href="https://www.linkedin.com/in/rfaharetana/"
+                target="_blank" class="link">LinkedIn</a></li>
+        </ul>
     </nav>
     <main>
         <h1>Home</h1>
@@ -56,7 +62,7 @@
             <p class="hero-label">Vélo Pousse</p>
         </section>
         <section class="certificate">
-            <h2>Web and Computer Programming Certificate</h3>
+            <h2>Web and Computer Programming Certificate</h2>
             <div class="course-selector">
                 <button id="course-all">All</button>
                 <button id="course-cse">CSE</button>
