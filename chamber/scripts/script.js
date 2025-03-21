@@ -28,7 +28,7 @@
 //   });
 
 //Rendering businesses
-const url = "https://faharetana-rkt.github.io/wdd230/chamber/data/members.json";
+const url = "https://faharetana-rkt.github.io/wdd231/chamber/data/members.json";
 async function getMembers() {
 	const response = await fetch(url);
 	const data = await response.json();
