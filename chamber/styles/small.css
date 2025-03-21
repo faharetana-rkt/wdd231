@@ -12,3 +12,102 @@ font Amatic SC; Dosis
 body {
     font-family: Dosis;
 }
+
+header {
+    background: #004E64;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.chamber-logo {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.city-name {
+    font-size: 2.3rem;
+    font-weight: bolder;
+    margin-bottom: 3px;
+    font-family:"Amatic SC";
+    margin-top: 5px;
+}
+
+.description {
+    font-size: 1.2rem;
+    margin-top: 3px;
+}
+
+#anchor-logo {
+    height: 100px;
+    width: auto;
+    border-radius: 2.5px;
+    margin-right: 7.5px;
+}
+
+/*hamburger button*/
+#menu::before {
+    content: "☰";
+}
+
+/*closing button*/
+#menu.open::before {
+    content: "X";
+}
+
+#menu {
+    font-family: monospace;
+    font-size: 2rem;
+    font-weight: bolder;
+    position: absolute;
+    top: 1rem;
+    right: 10px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+nav {
+    display: grid;
+    grid-template-rows: 0fr; 
+    height: 0;
+    background-color: #004E64;
+    transition: grid-template-rows 0.5s ease-out;
+}
+
+nav ul.navLink {
+    overflow: hidden;
+}
+
+nav.open {
+    grid-template-rows: 1fr; 
+    height: auto;
+}
+
+.navLink {
+    list-style-type: none;
+}
+
+.navLink a {
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+    font-size: 1.2rem;
+}
+
+.navLink li {
+    padding: 10px;
+}
+
+.navLink a:hover {
+    background: white;
+    color: #004E64;
+}
+
+.link.active {
+    text-decoration: overline;
+}
