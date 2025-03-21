@@ -1,0 +1,58 @@
+[
+    {
+        "name": "GasyCar",
+        "address": "Rue, Bernardin de Saint-Pierre",
+        "phone": "032 85 148 03",
+        "site": "https://www.gasycar.com",
+        "image": "images/gasycar.webp",
+        "membership": "gold"
+    },
+    {
+        "name": "Hair of King",
+        "address": "Anjoma, côté Poste et Otiv Anjoma",
+        "phone": "034 92 945 80",
+        "site": "https://www.hairofking.com",
+        "image": "images/barbershop.webp",
+        "membership": "silver"
+    },
+    {
+        "name": "Madi",
+        "address": "Toamasina, Madagascar",
+        "phone": "032 59 486 96",
+        "site": "https://www.madi.com",
+        "image": "images/madi.webp",
+        "membership": "silver"
+    },
+    {
+        "name": "Hardi Finance",
+        "address": "Anjoma, 10m après Happiness School",
+        "phone": "034 50 690 50",
+        "site": "http://www.hardi-madagascar.mg/",
+        "image": "images/hardi-finance.webp",
+        "membership": "gold"
+    },
+    {
+        "name": "Gasy Net",
+        "address": "Rue de Commerce, Toamasina",
+        "phone": "020 23 564 10",
+        "site": "https://gasynet.com",
+        "image": "images/gasynet.webp",
+        "membership": "silver"
+    },
+    {
+        "name": "Mitsok'ovy",
+        "address": "Toamasina, Madagascar",
+        "phone": "038 43 825 60",
+        "site": "https://www.mitsokovy.com",
+        "image": "images/mitsokovy.webp",
+        "membership": "bronze"
+    },
+    {
+        "name": "zigzag",
+        "address": "En face église sacré cœur, boulevard Radama I",
+        "phone": "034 65 617 94",
+        "site": "https://www.zigzag.com",
+        "image": "images/zigzag.webp",
+        "membership": "bronze"
+    }
+]
