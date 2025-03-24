@@ -15,7 +15,7 @@ body {
 
 header {
     background: #004E64;
-    height: 150px;
+    height: 200px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -75,7 +75,7 @@ nav {
     display: grid;
     grid-template-rows: 0fr; 
     height: 0;
-    background-color: #25A18E;
+    background-color: #004E64;
     transition: grid-template-rows 0.5s ease-out;
 }
 
@@ -135,6 +135,23 @@ main {
     border: solid 3px #25A18E;
 }
 
+.businesses div {
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.businesses {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .grid.businesses {
     display: flex;
     flex-direction: column;
@@ -142,19 +159,80 @@ main {
     align-items: center;
 }
 
-.grid div {
+.grid.businesses div {
     margin: 15px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 250px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
 }
 
-.grid h3 {
+.grid.businesses h3 {
     display: none;
 }
 
 .businesses div p, .businesses div h3, .businesses div img {
     margin: 5px;
+}
+
+.list.businesses div img {
+	display: none;
+}
+
+.list.businesses div {
+	display: grid;
+	grid-template-columns: 1fr 2fr 1fr 2fr;
+	margin: 0;
+	padding: 0.25rem;
+    width: 100%;
+    box-shadow: none;
+}
+
+.list.businesses div:nth-child(even) {
+	background-color: #9FFFCB;
+}
+
+footer {
+    background-color: #004E64;
+    color: white;
+    margin-top: 25px;
+    padding-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p, footer h3 {
+    margin: 5px;
+}
+
+.class-info, .chamber-info, .socials {
+    padding: 10px;
+}
+
+#lastModified {
+    color: yellow;
+}
+
+.socials img {
+    width: 75px;
+    border-radius: 75px;
+    margin: 10px;
+}
+
+.class-info, .chamber-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.socials {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
 }
