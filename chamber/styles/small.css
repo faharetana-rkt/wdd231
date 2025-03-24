@@ -97,6 +97,7 @@ nav.open {
     color: white;
     padding: 5px;
     font-size: 1.2rem;
+    font-weight: bold;
 }
 
 .navLink li {
@@ -110,4 +111,50 @@ nav.open {
 
 .link.active {
     text-decoration: overline;
+}
+
+main {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#grid, #list {
+    font-size: 2rem;
+    cursor: pointer;
+    width: 75px;
+    padding: 5px;
+    margin: 10px;
+    background-color: #7AE582;
+    border-radius: 7px;
+    border: solid 3px #25A18E;
+}
+
+.grid.businesses {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid div {
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+}
+
+.grid h3 {
+    display: none;
+}
+
+.businesses div p, .businesses div h3, .businesses div img {
+    margin: 5px;
 }
