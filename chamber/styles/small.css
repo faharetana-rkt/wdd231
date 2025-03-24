@@ -75,7 +75,7 @@ nav {
     display: grid;
     grid-template-rows: 0fr; 
     height: 0;
-    background-color: #004E64;
+    background-color: #25A18E;
     transition: grid-template-rows 0.5s ease-out;
 }
 
