@@ -84,4 +84,3 @@ listbutton.addEventListener("click", () => {
     display.classList.remove("grid");
 })
 
-/*moving nav to */
