@@ -91,4 +91,9 @@
         gap: 1.3rem;
     }
 
+    #tickets {
+        bottom: 50px;
+        right: 50px;
+    }
+
 }
