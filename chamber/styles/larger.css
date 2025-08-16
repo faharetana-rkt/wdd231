@@ -30,6 +30,7 @@
         align-items: center;
     }
 
+    /* ---------- DIRECTORY STYLING ---------------*/
     .businesses {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -65,4 +66,29 @@
     .list.businesses div {
         height: auto;
     }
+
+    /* ---------- HOMEPAGE STYLING ---------------*/
+    #home {
+        display: grid;
+        gap: 20px;
+        grid-template-columns: 2fr 1.5fr 1fr;
+    }
+
+    .weather, .forecast {
+        margin: 0;
+    }
+
+    .chamber-events {
+        height: auto;
+    }
+
+    .random-businesses {
+        grid-column: 1/4;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 0;
+        gap: 1.3rem;
+    }
+
 }

@@ -1,82 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Chamber of Commerce Directory Page</title>
-    <meta name="author" content="Faharetana">
-    <meta name="description"
-        content="This is the directory page of the Chamber of Commerce Website of Toamasina">
+    <meta name="author" content="Faharetana" />
+    <meta
+      name="description"
+      content="This is the directory page of the Chamber of Commerce Website of Toamasina"
+    />
     <!-- Facebook meta tags -->
-    <meta property="og:title" content="Faharetana's Directory page for the Chamber of Commerce of Toamasina">
-    <meta property="og:type" content="Website">
-    <meta property="og:image" content="https://faharetana-rkt.github.io/wdd231/chamber/images/city-overview.webp">
-    <meta property="og:url" content="https://faharetana-rkt.github.io/wdd231/chamber/directory.html">
-    <meta property="og:description" content="This is the directory page of the Chamber of Commerce of Toamasina">
-    <meta property="og:image:alt" content="Birdview of the city of Toamasina">
+    <meta
+      property="og:title"
+      content="Faharetana's Directory page for the Chamber of Commerce of Toamasina"
+    />
+    <meta property="og:type" content="Website" />
+    <meta
+      property="og:image"
+      content="https://faharetana-rkt.github.io/wdd231/chamber/images/city-overview.webp"
+    />
+    <meta
+      property="og:url"
+      content="https://faharetana-rkt.github.io/wdd231/chamber/directory.html"
+    />
+    <meta
+      property="og:description"
+      content="This is the directory page of the Chamber of Commerce of Toamasina"
+    />
+    <meta property="og:image:alt" content="Birdview of the city of Toamasina" />
     <!-- Twitter meta tags -->
-    <meta property="twitter:title" content="Faharetana's Directory page for the Chamber of Commerce of Toamasina">
-    <meta property="twitter:description" content="This is the directory page of the Chamber of Commerce of Toamasina">
-    <meta property="twitter:image" content="https://faharetana-rkt.github.io/wdd231/chamber/images/city-overview.webp">
-    <meta property="twitter:card" content="summary_large_image">
+    <meta
+      property="twitter:title"
+      content="Faharetana's Directory page for the Chamber of Commerce of Toamasina"
+    />
+    <meta
+      property="twitter:description"
+      content="This is the directory page of the Chamber of Commerce of Toamasina"
+    />
+    <meta
+      property="twitter:image"
+      content="https://faharetana-rkt.github.io/wdd231/chamber/images/city-overview.webp"
+    />
+    <meta property="twitter:card" content="summary_large_image" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
     <!--Preconnect to google fonts-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Dosis:wght@200..800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="styles/normalize.css">
-    <link rel="stylesheet" type="text/css" href="styles/small.css">
-    <link rel="stylesheet" type="text/css" href="styles/larger.css">
-    <link rel="icon" href="images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Dosis:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="styles/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="styles/small.css" />
+    <link rel="stylesheet" type="text/css" href="styles/larger.css" />
+    <link rel="icon" href="images/favicon.ico" />
+    <!-- Icons -->
     <script src="scripts/script.js" defer></script>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <div class="chamber-logo">
-            <img id="anchor-logo" src="images/anchor.webp" alt="Picture of an anchor">
-            <div>
-                <p class="city-name">Toamasina</p>
-                <p class="description">Chamber of Commerce</p>
-            </div>
+      <div class="chamber-logo">
+        <img
+          id="anchor-logo"
+          src="images/anchor.webp"
+          alt="Picture of an anchor"
+        />
+        <div>
+          <p class="city-name">Toamasina</p>
+          <p class="description">Chamber of Commerce</p>
         </div>
-        <nav id="animateme">
-            <ul class="navLink">
-                <li><a href="index.html" class="link">Home</a></li>
-                <li><a href="directory.html" class="link">Directory</a></li>
-                <li><a href="" class="link">Join</a></li>
-                <li><a href="" class="link">Discover</a></li>
-            </ul>
-        </nav>
-        <button id="menu" aria-label="Toggle navigation menu"></button>
+      </div>
+      <nav id="animateme">
+        <ul class="navLink">
+          <li><a href="index.html" class="link">Home</a></li>
+          <li><a href="directory.html" class="link">Directory</a></li>
+          <li><a href="" class="link">Join</a></li>
+          <li><a href="" class="link">Discover</a></li>
+        </ul>
+      </nav>
+      <button id="menu" aria-label="Toggle navigation menu"></button>
     </header>
     <main>
-        <h1>Directory</h1>
-        <div class="buttons">
-            <button id="grid" aria-label="Toggle grid display">⊞</button>
-            <button id="list" aria-label="Toggle list display">📋</button>
-        </div>
-        <div class="businesses">
-
-        </div>
+      <h1>Directory</h1>
+      <div class="buttons">
+        <button id="grid" aria-label="Toggle grid display">
+          <span class="material-symbols-outlined"> grid_view </span>
+        </button>
+        <button id="list" aria-label="Toggle list display">
+          <span class="material-symbols-outlined"> list_alt </span>
+        </button>
+      </div>
+      <div class="businesses"></div>
     </main>
     <footer>
-        <div class="chamber-info">
-            <h3>Toamasina Chamber of Commerce</h3>
-            <p>4 Rue du Commerce BP</p>
-            <p>108-Ampasimazava, Toamasina</p>
-            <p>ccit.officiel@gmail.com</p>
-            <p>+261 34 20 625 34</p>
-        </div>
-        <div class="socials">
-            <a href="https://www.youtube.com" target="_blank"><img src="images/yt-logo.webp" alt="youtube logo"></a>
-            <a href="https://x.com" target="_blank"><img src="images/x-logo.webp" alt="X logo"></a>
-            <a href="https://fr.linkedin.com" target="_blank"><img src="images/linkedin-logo.webp" alt="linked in logo"></a>
-        </div>
-        <div class="class-info">
-            <p>WDD 231 Class Project</p>
-            <p>Rakotomamonjy Faharetana</p>
-            <p><span id="currentYear"></span> Chamber of Commerce</p>
-            <span id="lastModified"></span>
-        </div>
+      <div class="chamber-info">
+        <h3>Toamasina Chamber of Commerce</h3>
+        <p>4 Rue du Commerce BP</p>
+        <p>108-Ampasimazava, Toamasina</p>
+        <p>ccit.officiel@gmail.com</p>
+        <p>+261 34 20 625 34</p>
+      </div>
+      <div class="socials">
+        <a href="https://www.youtube.com" target="_blank"
+          ><img src="images/yt-logo.webp" alt="youtube logo"
+        /></a>
+        <a href="https://x.com" target="_blank"
+          ><img src="images/x-logo.webp" alt="X logo"
+        /></a>
+        <a href="https://fr.linkedin.com" target="_blank"
+          ><img src="images/linkedin-logo.webp" alt="linked in logo"
+        /></a>
+      </div>
+      <div class="class-info">
+        <p>WDD 231 Class Project</p>
+        <p>Rakotomamonjy Faharetana</p>
+        <p><span id="currentYear"></span> Chamber of Commerce</p>
+        <span id="lastModified"></span>
+      </div>
     </footer>
-</body>
+  </body>
 </html>
