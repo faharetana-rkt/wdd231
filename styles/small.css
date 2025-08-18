@@ -192,6 +192,12 @@ main {
     cursor: auto;
 }
 
+/*------------ DIALOG STYLING --------------*/
+.dialogs {
+    width: 400px;
+    height: auto;
+}
+
 footer {
     background: #800f2f;
     text-align: center;

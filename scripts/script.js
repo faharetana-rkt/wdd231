@@ -114,13 +114,15 @@ function renderCourse(courses) {
   modal.innerHTML = "";
   courses.forEach((course) => {
     const button = document.createElement("button");
+    button.classList.add(`${course.subject}${course.number}`);
+    button.classList.add("open-modal-button");
     button.innerHTML = `${course.subject} ${course.number}`;
     const parent = document.querySelector(".courses");
     // Adding class finished in finished courses
     if (course.completed === true) {
       button.classList.add("finished");
-      button.classList.add(`${course.subject}${course.number}`);
     }
+    // Rendering dialogs
     const dialog = document.createElement("dialog");
     dialog.innerHTML = `<h2>${course.subject}${course.number}</h2>
                                 <h3>${course.title}</h3>
@@ -130,12 +132,17 @@ function renderCourse(courses) {
                                 <p>Technology: ${course.technology.join(
                                   ", "
                                 )}</p>
-                                <button class="close-modal-button">❌</button>`;
+                                <button class="${course.subject}${
+      course.number
+    } close-modal-button">❌</button>`;
     dialog.setAttribute("id", `${course.subject}${course.number}`);
+    dialog.classList.add("dialogs");
     modal.appendChild(dialog);
     parent.appendChild(button);
   });
 }
+
+
 
 // Function to return the sum of the credits
 function getTotalCredit(courses) {
@@ -170,4 +177,59 @@ wddButton.addEventListener("click", () => {
   const filteredCourses = courses.filter((course) => course.subject === "WDD");
   renderCourse(filteredCourses);
   renderTotal(getTotalCredit(filteredCourses));
+});
+
+
+const openDialogs = document.querySelectorAll(".open-modal-button");
+const closeDialogs = document.querySelectorAll(".close-modal-button");
+
+openDialogs.forEach((openDialog) => {
+  openDialog.addEventListener("click", () => {
+    let modal;
+    if (openDialog.classList.contains("WDD231")) {
+      modal = document.querySelector("#WDD231");
+      modal.showModal();
+    } else if (openDialog.classList.contains("WDD131")) {
+      modal = document.querySelector("#WDD131");
+      modal.showModal();
+    } else if (openDialog.classList.contains("CSE210")) {
+      modal = document.querySelector("#CSE210");
+      modal.showModal();
+    } else if (openDialog.classList.contains("CSE111")) {
+      modal = document.querySelector("#CSE111");
+      modal.showModal();
+    } else if (openDialog.classList.contains("WDD130")) {
+      modal = document.querySelector("#WDD130");
+      modal.showModal();
+    } else if (openDialog.classList.contains("CSE110")) {
+      modal = document.querySelector("#CSE110");
+      modal.showModal();
+    }
+  });
+});
+
+closeDialogs.forEach((closeDialog) => {
+  closeDialog.addEventListener("click", () => {
+    let modal;
+    if (closeDialog.classList.contains("WDD231")) {
+      modal = document.querySelector("#WDD231");
+      modal.close();
+    } else if (closeDialog.classList.contains("WDD131")) {
+      modal = document.querySelector("#WDD131");
+      modal.close();
+    } else if (closeDialog.classList.contains("CSE210")) {
+      modal = document.querySelector("#CSE210");
+      modal.close();
+    }
+    if (closeDialog.classList.contains("CSE111")) {
+      modal = document.querySelector("#CSE111");
+      modal.close();
+    } else if (closeDialog.classList.contains("WDD130")) {
+      modal = document.querySelector("#WDD130");
+      modal.close();
+    } else if (closeDialog.classList.contains("CSE110")) {
+      modal = document.querySelector("#CSE110");
+      modal.close();
+    }
+  });
 });
