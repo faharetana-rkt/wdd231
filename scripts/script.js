@@ -139,10 +139,17 @@ function renderCourse(courses) {
     dialog.classList.add("dialogs");
     modal.appendChild(dialog);
     parent.appendChild(button);
+    // Show modal event listener attached to the course button
+    button.addEventListener("click", () => {
+      dialog.showModal();
+    });
+    // Close modal event listener attached to the close button using dialog.querySelector
+    const closeButton = dialog.querySelector(".close-modal-button");
+    closeButton.addEventListener("click", () => {
+      dialog.close();
+    });
   });
-}
-
-
+};
 
 // Function to return the sum of the credits
 function getTotalCredit(courses) {
@@ -179,57 +186,52 @@ wddButton.addEventListener("click", () => {
   renderTotal(getTotalCredit(filteredCourses));
 });
 
+// // Show-close dialogs
+// document.addEventListener("click", (e) => {
+// // Open
+//   if (e.target.classList.contains("open-modal-button")) {
+//     let modal;
+//     if (e.target.classList.contains("WDD231")) {
+//       modal = document.querySelector("#WDD231");
+//       modal.showModal();
+//     } else if (e.target.classList.contains("WDD131")) {
+//       modal = document.querySelector("#WDD131");
+//       modal.showModal();
+//     } else if (e.target.classList.contains("CSE210")) {
+//       modal = document.querySelector("#CSE210");
+//       modal.showModal();
+//     } else if (e.target.classList.contains("CSE111")) {
+//       modal = document.querySelector("#CSE111");
+//       modal.showModal();
+//     } else if (e.target.classList.contains("WDD130")) {
+//       modal = document.querySelector("#WDD130");
+//       modal.showModal();
+//     } else if (e.target.classList.contains("CSE110")) {
+//       modal = document.querySelector("#CSE110");
+//       modal.showModal();
+//     }
+//   };
 
-const openDialogs = document.querySelectorAll(".open-modal-button");
-const closeDialogs = document.querySelectorAll(".close-modal-button");
-
-openDialogs.forEach((openDialog) => {
-  openDialog.addEventListener("click", () => {
-    let modal;
-    if (openDialog.classList.contains("WDD231")) {
-      modal = document.querySelector("#WDD231");
-      modal.showModal();
-    } else if (openDialog.classList.contains("WDD131")) {
-      modal = document.querySelector("#WDD131");
-      modal.showModal();
-    } else if (openDialog.classList.contains("CSE210")) {
-      modal = document.querySelector("#CSE210");
-      modal.showModal();
-    } else if (openDialog.classList.contains("CSE111")) {
-      modal = document.querySelector("#CSE111");
-      modal.showModal();
-    } else if (openDialog.classList.contains("WDD130")) {
-      modal = document.querySelector("#WDD130");
-      modal.showModal();
-    } else if (openDialog.classList.contains("CSE110")) {
-      modal = document.querySelector("#CSE110");
-      modal.showModal();
-    }
-  });
-});
-
-closeDialogs.forEach((closeDialog) => {
-  closeDialog.addEventListener("click", () => {
-    let modal;
-    if (closeDialog.classList.contains("WDD231")) {
-      modal = document.querySelector("#WDD231");
-      modal.close();
-    } else if (closeDialog.classList.contains("WDD131")) {
-      modal = document.querySelector("#WDD131");
-      modal.close();
-    } else if (closeDialog.classList.contains("CSE210")) {
-      modal = document.querySelector("#CSE210");
-      modal.close();
-    }
-    if (closeDialog.classList.contains("CSE111")) {
-      modal = document.querySelector("#CSE111");
-      modal.close();
-    } else if (closeDialog.classList.contains("WDD130")) {
-      modal = document.querySelector("#WDD130");
-      modal.close();
-    } else if (closeDialog.classList.contains("CSE110")) {
-      modal = document.querySelector("#CSE110");
-      modal.close();
-    }
-  });
-});
+//   if (e.target.classList.contains("close-modal-button")) {
+//     let modal;
+//     if (e.target.classList.contains("WDD231")) {
+//       modal = document.querySelector("#WDD231");
+//       modal.close();
+//     } else if (e.target.classList.contains("WDD131")) {
+//       modal = document.querySelector("#WDD131");
+//       modal.close();
+//     } else if (e.target.classList.contains("CSE210")) {
+//       modal = document.querySelector("#CSE210");
+//       modal.close();
+//     } else if (e.target.classList.contains("CSE111")) {
+//       modal = document.querySelector("#CSE111");
+//       modal.close();
+//     } else if (e.target.classList.contains("WDD130")) {
+//       modal = document.querySelector("#WDD130");
+//       modal.close();
+//     } else if (e.target.classList.contains("CSE110")) {
+//       modal = document.querySelector("#CSE110");
+//       modal.close();
+//     }
+//   };
+// });
