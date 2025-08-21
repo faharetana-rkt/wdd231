@@ -1,0 +1,26 @@
+[
+  {
+    "level": "Non-profit",
+    "description": "Especially designed for non-profit organization.",
+    "fee": "No fees associated.",
+    "perks": "Can access basic feature of the chamber. Doesn't include advertisement."
+  },
+  {
+    "level": "Bronze",
+    "description": "Especially designed for small businesses.",
+    "fee": "10.000 MGA monthly fee",
+    "perks": "Can access basic feature of the chamber. Can participate in social events held by the chamber."
+  },
+  {
+    "level": "Silver",
+    "description": "Especially designed for medium-sized businesses.",
+    "fee": "30.000 MGA monthly fee",
+    "perks": "Can access basic feature of the chamber. Can participate in social events held by the chamber. Business promoted in the homepage."
+  },
+  {
+    "level": "Gold",
+    "description": "Especially designed for large businesses.",
+    "fee": "70.000 MGA monthly fee",
+    "perks": "Can access basic feature of the chamber. Can participate in social events held by the chamber. Business promoted in the homepage. Priority access to facilities and document processings."
+  }
+]
