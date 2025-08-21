@@ -27,7 +27,8 @@
     <link rel="stylesheet" type="text/css" href="styles/small.css">
     <link rel="stylesheet" type="text/css" href="styles/larger.css">
     <link rel="icon" href="images/favicon.ico">
-    <script src="scripts/homepage.js" defer></script>
+    <script src="scripts/script.js" defer></script>
+    <script src="scripts/join.js" defer></script>
 </head>
 <body>
     <header>
@@ -49,7 +50,27 @@
         <button id="menu" aria-label="Toggle navigation menu"></button>
     </header>
     <main>
-        
+        <form class="join-chamber" method="GET" action="thanks.html">
+            <label>First name*:<input type="text" id="firstName" name="firstName" required autocomplete="given-name"></label>
+            <label>Last name*:<input type="text" id="lastName" name="lastName" required autocomplete="family-name"></label>
+            <label>Organizational title:<input type="text" id="title" name="title" autocomplete="organization-title" pattern="^[A-Za-z\- ]{7,}$"></label>
+            <label>Email*:<input type="email" id="email" name="email" autocomplete="email" required placeholder="johndoe@gmail.com"></label>
+            <label>Phone*:<input type="tel" id="phone" name="phone" autocomplete="tel-country-code" required placeholder="+261330644422"></label>
+            <label>Organization name*:<input type="text" id="org-name" name="org-name" autocomplete="organization" required></label>
+            
+            <h3>Select Membership*:</h3>
+            <label class="radio"><input type="radio" id="non-profit" name="membership" required> Non-profit</label>
+            <label class="radio"><input type="radio" id="bronze" name="membership" required> Bronze</label>
+            <label class="radio"><input type="radio" id="silver" name="membership" required> Silver</label>
+            <label class="radio"><input type="radio" id="gold" name="membership" required> Gold</label>
+
+            <label>Organization description:<textarea id="description" name="description" placeholder="Describe your organization here..." rows="5"></textarea></label>
+            <input type="hidden" id="timestamp" name="timestamp">
+            <button type="submit">Join Chamber</button>
+        </form> 
+        <div id="membership-modals">
+            
+        </div>
     </main>
     <footer>
         <div class="chamber-info">
