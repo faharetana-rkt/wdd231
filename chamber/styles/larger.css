@@ -1,99 +1,168 @@
-@media screen and (min-width:700px) {
-    /*hides the ham button on large view*/
-	#menu {
-		display: none;
-	}
+@media screen and (min-width: 700px) {
+  /*hides the ham button on large view*/
+  #menu {
+    display: none;
+  }
 
-    nav {
-        display: grid; 
-        grid-template-rows: 1fr;
-        height: auto;
-    }
-    
-    .navLink {
-        display: flex;
-        justify-content: space-around; 
-    }
+  nav {
+    display: grid;
+    grid-template-rows: 1fr;
+    height: auto;
+  }
 
-    header {
-        height: 150px;
-        display: flex;
-        justify-content: space-between;
-        padding-left: 50px;
-        padding-right: 50px;
-    }
+  .navLink {
+    display: flex;
+    justify-content: space-around;
+  }
 
-    footer {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        align-items: center;
-    }
+  header {
+    height: 150px;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
 
-    /* ---------- DIRECTORY STYLING ---------------*/
-    .businesses {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        grid-gap: 5px;
-        align-items: center;
-    }
+  footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+  }
 
-    .businesses div {
-        height: 250px;
-    }
-    
-    .businesses h3 {
-        display: none;
-    }
+  /* ---------- DIRECTORY STYLING ---------------*/
+  .businesses {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 5px;
+    align-items: center;
+  }
 
-    .grid.businesses {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        grid-gap: 5px;
-        align-items: center;
-    }
+  .businesses div {
+    height: 250px;
+  }
 
-    .list.businesses{
-        display: grid;
-        grid-template-columns: 1fr;
-        width: 100%;
-    }
+  .businesses h3 {
+    display: none;
+  }
 
-    .list.businesses h3 {
-        display: block;
-    }
+  .grid.businesses {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 5px;
+    align-items: center;
+  }
 
-    .list.businesses div {
-        height: auto;
-    }
+  .list.businesses {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
 
-    /* ---------- HOMEPAGE STYLING ---------------*/
-    #home {
-        display: grid;
-        gap: 20px;
-        grid-template-columns: 2fr 1.5fr 1fr;
-    }
+  .list.businesses h3 {
+    display: block;
+  }
 
-    .weather, .forecast {
-        margin: 0;
-    }
+  .list.businesses div {
+    height: auto;
+  }
 
-    .chamber-events {
-        height: auto;
-    }
+  /* ---------- HOMEPAGE STYLING ---------------*/
+  #home {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 2fr 1.5fr 1fr;
+  }
 
-    .random-businesses {
-        grid-column: 1/4;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        margin-top: 0;
-        gap: 1.3rem;
-    }
+  .weather,
+  .forecast {
+    margin: 0;
+  }
 
-    #tickets {
-        bottom: 50px;
-        right: 50px;
-    }
+  .chamber-events {
+    height: auto;
+  }
 
+  .random-businesses {
+    grid-column: 1/4;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 0;
+    gap: 1.3rem;
+  }
+
+  #tickets {
+    bottom: 50px;
+    right: 50px;
+  }
+
+  /* ---------- JOIN STYLING ---------------*/
+  #join-container {
+    display: grid;
+    margin: 2rem 0 0 0;
+    padding: 0;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+
+  #application-h2 {
+    grid-column: 1/2;
+    margin-bottom: 0;
+  }
+
+  #levels-h2 {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    margin-bottom: 0;
+  }
+
+  .join-chamber {
+    margin: 0 1rem 0 0;
+    min-width: 325px;
+    width: 100%;
+    grid-column: 1/2;
+  }
+
+  #membership-modals {
+    margin: 0;
+    min-width: 325px;
+    width: 100%;
+    grid-column: 2/3;
+    overflow: visible;
+  }
+
+  #membership-modals::before {
+    content: "⭐"; /* the star itself */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 1rem;
+    transform: translate(-50%, -50%);
+    animation: rectangular-orbit 20s 5s linear infinite; /* 20s = full loop */
+  }
+
+  /* Keyframes: move clockwise around border */
+  @keyframes rectangular-orbit {
+    0% {
+      top: -0.8em;
+      left: 0;
+    } /* top-left */
+    25% {
+      top: -0.8em;
+      left: 100%;
+    } /* top-right */
+    50% {
+      top: 100%;
+      left: 100%;
+    } /* bottom-right */
+    75% {
+      top: 100%;
+      left: -0.8em;
+    } /* bottom-left */
+    100% {
+      top: -0.8em;
+      left: 0;
+    } /* back to start */
+  }
 }

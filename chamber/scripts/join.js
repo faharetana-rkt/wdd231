@@ -1,6 +1,7 @@
 const url =
   "https://faharetana-rkt.github.io/wdd231/chamber/data/membership.json";
 const modalContainer = document.querySelector("#membership-modals");
+const dialogContainer = document.querySelector("#dialogs");
 
 async function getMemberships() {
   try {
@@ -36,12 +37,12 @@ function displayMembership(memberships) {
         const close = dialog.querySelector(".close-modal");
         open.addEventListener("click", () => {
             dialog.showModal();
-        })
+        });
         close.addEventListener("click", () => {
             dialog.close();
-        })
+        });
         modalContainer.appendChild(div);
-        modalContainer.appendChild(dialog);
+        dialogContainer.appendChild(dialog);
     });
 }
 
