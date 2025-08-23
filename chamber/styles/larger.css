@@ -130,16 +130,23 @@
     width: 100%;
     grid-column: 2/3;
     overflow: visible;
+    height: 475px;
+    
+  }
+  
+  .membership-card {
+    animation: change-color 5s ease forwards, fall-in 5s ease forwards;
   }
 
   #membership-modals::before {
     content: "⭐"; /* the star itself */
     position: absolute;
-    top: 50%;
+    top: 60%;
     left: 50%;
+    opacity: 0;
     font-size: 1rem;
     transform: translate(-50%, -50%);
-    animation: rectangular-orbit 20s 5s linear infinite; /* 20s = full loop */
+    animation: rectangular-orbit 15s 5s linear infinite; /* 15s = full loop */
   }
 
   /* Keyframes: move clockwise around border */
@@ -147,6 +154,7 @@
     0% {
       top: -0.8em;
       left: 0;
+      opacity: 1;
     } /* top-left */
     25% {
       top: -0.8em;
@@ -163,6 +171,39 @@
     100% {
       top: -0.8em;
       left: 0;
+      opacity: 1;
     } /* back to start */
+  }
+
+  @keyframes change-color {
+    0% {
+      background-color: #9FFFCB;
+    }
+    25% {
+      background-color: #7AE582;
+    }
+    50%{
+      background-color: #25A18E;
+    }
+    75% {
+      background-color: #00A5CF;
+    }
+    100% {
+      background-color: #004E64;
+    }
+  }
+
+  @keyframes fall-in {
+    0%{
+      transform: translateY(150%); 
+      opacity: 0;
+    }
+    60%{
+      opacity: 0.6;
+    }
+    100%{
+      transform: translateY(0%);
+      opacity: 1;
+    }
   }
 }

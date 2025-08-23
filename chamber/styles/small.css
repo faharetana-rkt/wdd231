@@ -423,7 +423,6 @@ main {
   margin: 0;
   padding: 0.5rem;
   margin-bottom: 0.5rem;
-  background-color: #004e64;
   color: white;
 }
 
@@ -479,6 +478,12 @@ main {
 #join-container h2 {
   text-decoration: underline;
 }
+
+#thanks-container li {
+  padding: 0.5rem;
+  font-size: 1.3rem;
+}
+
 /* .membership-card:nth-child(even) {
   clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
 }
