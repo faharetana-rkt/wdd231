@@ -1,0 +1,50 @@
+[
+    {
+        "name":"Datsara Village",
+        "address":"Vohidrotra - 1ère à droite après Pont Ivoloina / 3.5km de piste, Toamasina, Madagascar",
+        "description":"Datsara Village is a resort situated outside the city. There are numerous facilities such as a swimming pool, a picnic area, tennis court, baby foot, etc ... A great place to spend the week-end with family.",
+        "link": "images/datsara.webp"
+    },
+    {
+        "name":"Avenue de l'indépendance",
+        "address":"Avenue de l'indépendance, Boulevard Augagneur, Toamasina, Madagascar",
+        "description":"Avenue de l'indépendance is a landmark in Toamasina to commemorate the day Madagascar got its independance from the French colonization",
+        "link": "images/avenue.webp"
+    },
+    {
+        "name":"Foulpointe",
+        "address":"60km à l'Est, Toamasina, Madagascar",
+        "description":"Foulpointe beach is renowned for its turquoise sea water and its beautiful beach. If you want to enjoy the beach, the sunshine, and seafoods, come visit",
+        "link": "images/foulpointe.webp"
+    },
+    {
+        "name":"Ivoloina Park",
+        "address":"Villa Nathalie, Carreau 1A, Plot 14/21 Salazamay Nord, Toamasina, Madagascar",
+        "description":"Discover the magic of Madagascar at Parc Ivoloina (eev’-uh-lah-ween). Observe twelve different varieties of lemurs including free-ranging species as well as an assortment of native reptiles and amphibians like our famous chameleons and tomato frogs. Take a guided tour, explore the forest on one of many walking trails, enjoy a picnic lunch, and cool off in a waterfall.",
+        "link": "images/ivoloina-parc.webp"
+    },
+    {
+        "name":"Jet d'eau",
+        "address":"43 Avenue De L'indépendance, Toamasina, Madagascar",
+        "description":"Popularly called jet d'eau locally, it is a pressurized fountain water with lights and music which is available every evening at 07pm, 08pm, and 09pm. Every show is 15mn long.",
+        "link": "images/jetdeau.webp"
+    },
+    {
+        "name":"Miami",
+        "address":"Boulevard RATSIMILAHO, Toamasina, Madagascar",
+        "description":"Miami is a recreation area that was inaugurated last year. There are high end restaurant, garden, recreational sport, and fitness activities.",
+        "link": "images/miami.webp"
+    },
+    {
+        "name":"Région",
+        "address":"Avenue de l'indépendance, Toamasina, Madagascar",
+        "description":"Your go to place for every administrative matter. If there are information that you need regarding the city, you can find it there.",
+        "link": "images/région.webp"
+    },
+    {
+        "name":"Skate Park",
+        "address":"Boulevard RATSIMILAHO, Toamasina, Madagascar",
+        "description":"Build specifically for every extreme sport enthusiast. You can roller skate, skateboard, bmx, kick scooter, etc ...",
+        "link": "images/skate-park.webp"
+    }
+]
