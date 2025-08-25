@@ -28,7 +28,7 @@ function displayPlaces(places) {
             <figcaption>Image of ${place.name}</figcaption>
         </figure>
         <p>${place.description}</p>
-        <a href="${place.website}">
+        <a href="${place.website}" target="_blank">
             <button>Learn more</button>
         </a>
         `;

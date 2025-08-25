@@ -492,6 +492,56 @@ main {
   clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
 } */
 
+/*---------- DISCOVER STYLING -------------*/
+.card-place figcaption {
+  text-align: center;
+}
+
+.card-place {
+  max-width: 320px;
+   box-shadow: 4px 4px 8px #004e64;
+}
+
+.card-place img {
+  width: 100%;
+  aspect-ratio: 3/2;
+  border-radius: 10px;
+}
+
+.card-place h2 {
+  text-align: center;
+  background-color: #004e64;
+  color: white;
+  padding: 0.3rem;
+}
+
+.card-place p {
+  margin-bottom: 0;
+  padding: 0.3rem;
+}
+
+.card-place a {
+  display: flex;
+  text-decoration: none;
+  justify-content: flex-end;
+  padding: 1rem;
+}
+
+.card-place button {
+  padding: 0.3rem;
+  border: none;
+  background-color: #004e64;
+  color: white;
+  cursor: pointer;
+  border-radius: 2px;
+  transition: background-color 1s ease;
+}
+
+.card-place button:hover {
+  background-color:#25a18e;
+}
+
+
 
 /*---------- FOOTER STYLING -------------*/
 footer {
