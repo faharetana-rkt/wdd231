@@ -27,6 +27,7 @@ function displayPlaces(places) {
             <img src="${place.link}" alt="an image of ${place.name}">
             <figcaption>Image of ${place.name}</figcaption>
         </figure>
+        <address>${place.address}</address>
         <p>${place.description}</p>
         <a href="${place.website}" target="_blank">
             <button>Learn more</button>

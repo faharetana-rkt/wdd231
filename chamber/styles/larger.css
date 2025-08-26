@@ -97,7 +97,7 @@
     right: 50px;
   }
 
-  /* ---------- JOIN STYLING ---------------*/
+  /* ---------- JOIN STYLING --------------- */
   #join-container {
     display: grid;
     margin: 2rem 0 0 0;
@@ -205,5 +205,41 @@
       transform: translateY(0%);
       opacity: 1;
     }
+  }
+
+  /* ---------- DISCOVER STYLING --------------- */
+  #discover-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .card-place {
+    min-width: 510px;
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    grid-template-areas: "header header"
+                         "img para"
+                         "address button";
+  }
+
+  .card-place h2 {
+    margin-top: 0;
+    grid-area: header;
+  }
+
+  .card-place figure {
+    grid-area: img;
+  }
+
+  .card-place p {
+    grid-area: para;
+  }
+
+  .card-place address {
+    grid-area: address;
+  }
+
+  .card-place button {
+    grid-area: button;
   }
 }
