@@ -24,7 +24,7 @@ function displayPlaces(places) {
         div.innerHTML = `
         <h2>${place.name}</h2>
         <figure>
-            <img src="${place.link}" alt="an image of ${place.name}">
+            <img src="${place.link}" alt="an image of ${place.name}" loading="lazy">
             <figcaption>Image of ${place.name}</figcaption>
         </figure>
         <address>${place.address}</address>
