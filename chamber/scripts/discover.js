@@ -42,12 +42,12 @@ msgContainer.innerHTML = "";
 // milliseconds to days constant = 1000 ms/s * 60 s/m * 60 m/h * 24 h/day
 const msToDays = 86400000;
 
+
 const today = Date.now();
 if (localStorage.getItem("lastvisit") == null) {
   const h2 = document.createElement("h2");
   h2.innerHTML = `Welcome! Let us know if you have any questions.`;
   msgContainer.appendChild(h2);
-  localStorage.setItem("lastvisit", `${today}`);
 } else {
   const lastvisit = localStorage.getItem("lastvisit");
   const interval = (today - lastvisit) / msToDays;
@@ -55,17 +55,16 @@ if (localStorage.getItem("lastvisit") == null) {
     const h2 = document.createElement("h2");
     h2.innerHTML = "Back so soon! Awesome!";
     msgContainer.appendChild(h2);
-    localStorage.setItem("lastvisit", `${today}`);
   } else if (Math.floor(interval) == 1) {
     const h2 = document.createElement("h2");
     h2.innerHTML = `You last visited 1 day ago`;
     msgContainer.appendChild(h2);
-    localStorage.setItem("lastvisit", `${today}`);
   } else if (Math.floor(interval) > 1) {
     const h2 = document.createElement("h2");
     h2.innerHTML = `You last visited ${Math.round(interval)} days ago`;
     msgContainer.appendChild(h2);
-    localStorage.setItem("lastvisit", `${today}`);
   }
 };
+
+localStorage.setItem("lastvisit", `${today}`);
 

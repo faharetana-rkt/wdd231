@@ -242,4 +242,12 @@
   .card-place button {
     grid-area: button;
   }
+
+  .card-place img {
+    transition: border-radius 1s ease;
+  }
+
+  .card-place img:hover {
+    border-radius: 15px 150px;
+  }
 }
