@@ -37,7 +37,7 @@ h1 {
 
 /*closing button*/
 #menu.open::before {
-    content: "X";
+    content: "×";
 }
 
 #menu {
