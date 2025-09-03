@@ -32,16 +32,16 @@ h1 {
 
 /*hamburger button*/
 #menu::before {
-    content: "☰";
+    content: "\2630";
 }
 
 /*closing button*/
 #menu.open::before {
-    content: "×";
+    content: "\00D7";
 }
 
 #menu {
-    font-family: monospace;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 1.5rem;
     font-weight: bolder;
     position: absolute;
@@ -79,6 +79,8 @@ nav.open {
     color: white;
     padding: 10px;
     font-size: 1.3rem;
+    border-radius: 5px;
+    transition: background 0.3s ease;
 }
 
 .navLink li {
@@ -111,6 +113,7 @@ main {
 
 .course-work li {
     margin: 10px;
+    font-size: 1.2rem;
 }
 
 .hero h2 {
@@ -245,8 +248,32 @@ footer {
 #flag {
     height: 50px;
     margin-left: 10px;
+    border-radius: 5px;
 }
 
 .lastModified {
     color: #fcf300;
+}
+
+#socials a {
+    display: block;
+    padding: 0.5rem;
+    height: 40px;
+    border-radius: 10px;
+    transition: background-color 0.5s ease;
+}
+
+#socials img {
+    width: 40px;
+    height: 40px;
+}
+
+#socials {
+    display: flex;
+    justify-content: center;
+    flex-shrink: inherit;
+}
+
+#socials a:hover {
+    background-color: #2B2D42;
 }
