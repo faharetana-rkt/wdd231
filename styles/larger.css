@@ -16,7 +16,7 @@
   }
 
   .header-name {
-    font-size: 2.2rem;
+    font-size: 2rem;
   }
 
   main {
@@ -30,7 +30,7 @@
     grid-column: 1/4;
   }
 
-  .course-work {
+  .about-me {
     grid-column: 1/3;
   }
 
@@ -47,12 +47,17 @@
     grid-column: 2/3;
   }
 
-  .course-work,
+  .about-me,
   .certificate,
   .hero {
     border-radius: 10px 10px 0 0;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
   }
+
+  .about-me, .hero {
+    padding-bottom: 0;
+ }
+
 
   .course-work h2,
   .certificate h2,
@@ -60,13 +65,13 @@
     margin-top: 0;
   }
 
+  .about-me li, .about-me p {
+    margin: 10px;
+    font-size: 1.2rem;
+}
+
   .certificate {
     padding-bottom: 20px;
-  }
-
-  footer {
-    display: grid;
-    grid-template-columns: 3fr 1fr;
   }
 
   .footer-para {
@@ -74,18 +79,6 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    grid-column: 1/2;
   }
 
-  .lastModified {
-    grid-column: 1/2;
-    margin-top: 0;
-  }
-
-  #socials {
-    grid-column: 2/3;
-    grid-row: 1/3;
-    align-self: center;
-    justify-self: center;
-  }
 }
