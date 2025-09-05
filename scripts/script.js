@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const links = document.querySelectorAll(".link");
   let currentUrl = window.location.pathname.split("/").pop();
 
-  if (currentUrl == "") {
+  if (currentUrl === "") {
     currentUrl = "index.html";
   }
 
