@@ -108,6 +108,10 @@ nav.open {
   padding: 10px;
 }
 
+.navLink a {
+  transition: background 0.3s ease-out, color 0.3s ease-out;
+}
+
 .navLink a:hover {
   background: white;
   color: #004e64;
