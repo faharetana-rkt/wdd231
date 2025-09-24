@@ -54,12 +54,12 @@
         <div id="join-container">
         <h2 id="application-h2">Membership Application Form</h2>
         <form class="join-chamber" method="GET" action="thankyou.html">
-            <label>First name*:<input type="text" id="firstName" name="firstName" required autocomplete="given-name"></label>
-            <label>Last name*:<input type="text" id="lastName" name="lastName" required autocomplete="family-name"></label>
-            <label>Organizational title:<input type="text" id="title" name="title" autocomplete="organization-title" pattern="^[A-Za-z\- ]{7,}$"></label>
-            <label>Email*:<input type="email" id="email" name="email" autocomplete="email" required placeholder="johndoe@gmail.com"></label>
-            <label>Phone*:<input type="tel" id="phone" name="phone" autocomplete="tel" required placeholder="+261330644422"></label>
-            <label>Organization name*:<input type="text" id="org-name" name="orgName" autocomplete="organization" required></label>
+            <label>First name*:<input type="text" id="firstName" name="firstName" required autocomplete="given-name" title="First Name"></label>
+            <label>Last name*:<input type="text" id="lastName" name="lastName" required autocomplete="family-name" title="Last Name"></label>
+            <label>Organizational title:<input type="text" id="title" name="title" autocomplete="organization-title" pattern="^[A-Za-z\- ]{7,}$" title="Your title within your ogranization (7 characters, hyphen and space allowed, only letters)"></label>
+            <label>Email*:<input type="email" id="email" name="email" autocomplete="email" required placeholder="johndoe@gmail.com" title="Your email"></label>
+            <label>Phone*:<input type="tel" id="phone" name="phone" autocomplete="tel" required placeholder="+261330644422" title="Your phone number"></label>
+            <label>Organization name*:<input type="text" id="org-name" name="orgName" autocomplete="organization" required title="The title of your organization"></label>
             
             <h3>Select Membership*:</h3>
             <label class="radio"><input type="radio" id="non-profit" name="membership" value="Non-profit" required> Non-profit</label>
@@ -67,7 +67,7 @@
             <label class="radio"><input type="radio" id="silver" name="membership" value="Silver" required> Silver</label>
             <label class="radio"><input type="radio" id="gold" name="membership" value="Gold" required> Gold</label>
 
-            <label>Organization description:<textarea id="description" name="description" placeholder="Describe your organization here..." rows="5"></textarea></label>
+            <label>Organization description:<textarea id="description" name="description" placeholder="Describe your organization here..." rows="5" title="Describe your organization here"></textarea></label>
             <input type="hidden" id="timestamp" name="timestamp">
             <button type="submit">Join Chamber</button>
         </form> 

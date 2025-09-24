@@ -49,6 +49,6 @@ function displayMembership(memberships) {
 /* Timestamp rendering */
 const stampDate = new Date();
 const timestamp = document.querySelector("#timestamp");
-timestamp.value = `${stampDate.getDate()}/${stampDate.getMonth()}/${stampDate.getFullYear()} at ${stampDate.getHours()}:${stampDate.getMinutes()}`;
+timestamp.value = `${stampDate.getDate()}/${stampDate.getMonth() + 1}/${stampDate.getFullYear()} at ${stampDate.getHours()}:${stampDate.getMinutes()}`;
 
 getMemberships();
