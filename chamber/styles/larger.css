@@ -220,6 +220,7 @@
     grid-template-areas: "header header"
                          "img para"
                          "address button";
+    padding-bottom: 1px;
   }
 
   .card-place h2 {
@@ -241,6 +242,8 @@
 
   .card-place button {
     grid-area: button;
+    justify-self: end;
+    margin: 10px;
   }
 
   .card-place img {

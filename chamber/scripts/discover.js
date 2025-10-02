@@ -29,9 +29,7 @@ function displayPlaces(places) {
         </figure>
         <address>${place.address}</address>
         <p>${place.description}</p>
-        <a href="${place.website}" target="_blank">
-            <button>Learn more</button>
-        </a>
+        <button aria-label="Learn more about ${place.name}" onclick="window.open('${place.website}', '_blank')">Learn more</button>
         `;
         cardContainer.appendChild(div);
     });

@@ -510,6 +510,7 @@ main {
   max-width: 320px;
    box-shadow: 4px 4px 8px #004e64;
    margin: 1rem auto;
+   padding-bottom: 5px;
 }
 
 .card-place img {
@@ -530,14 +531,16 @@ main {
   padding: 0.3rem;
 }
 
-.card-place a {
+/* .card-place a {
   display: flex;
   text-decoration: none;
   justify-content: flex-end;
   padding: 1rem;
-}
+} */
 
 .card-place button {
+  width: 100px;
+  height: 35px;
   padding: 0.3rem;
   border: none;
   background-color: #004e64;
@@ -545,6 +548,8 @@ main {
   cursor: pointer;
   border-radius: 2px;
   transition: background-color 1s ease;
+  margin: 10px auto;
+  display: block;
 }
 
 .card-place button:hover {
