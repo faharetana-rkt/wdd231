@@ -1,10 +1,19 @@
+/*---------------- VARIABLES ----------------*/
+:root {
+  --main-color: #5e5b52;
+  --secondary-color: #ffd100;
+  --third-color: #bb6b00;
+  --header-font: "EB Garamond", Georgia, "Times New Roman";
+  --para-font: "Open Sans", Arial, sans-serif; 
+}
+
 * {
-  font-family: "Open Sans", Arial, sans-serif;
+  font-family: var(--para-font);
 }
 
 /*----------------- HEADER ------------------*/
 header {
-  background-color: #5e5b52;
+  background-color: var(--main-color);
 }
 
 #logo img {
@@ -78,4 +87,7 @@ header {
   grid-template-rows: 1fr;
 }
 
-
+/*----------------- FOOTER ------------------*/
+footer {
+  background-color: #5e5b52;
+}
