@@ -5,6 +5,7 @@
   --third-color: #bb6b00;
   --header-font: "EB Garamond", Georgia, "Times New Roman";
   --para-font: "Open Sans", Arial, sans-serif; 
+  --para-margin: 10px 0 10px 0;
 }
 
 * {
@@ -41,9 +42,8 @@ header {
   color: white;
   display: block;
   padding: 11px;
-  font-size: 1.3rem;
-  font-family: "EB Garamond", "Garamond", "Times New Roman", serif;
-  transition: background-color 0.2s ease, color 0.2s ease;
+  font-size: 1.2rem;
+  font-family: var(--para-font);
 }
 
 .link:hover {
@@ -90,4 +90,59 @@ header {
 /*----------------- FOOTER ------------------*/
 footer {
   background-color: #5e5b52;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-items: center;
+  justify-content: space-around;
+  padding: 0.5rem;
+}
+
+.class-info {
+  text-align: center;
+}
+
+.class-info p {
+  margin: var(--para-margin);
+}
+
+#lastModified {
+  color: var(--secondary-color);
+}
+
+.resources {
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.resources a {
+  padding: 5px;
+  color: var(--secondary-color);
+  transition: color 0.3s ease;
+  &:hover {
+    color: var(--third-color);
+  }
+}
+
+.resources h3 {
+  margin-top: 5px;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+.demo-video a {
+  color: black;
+  padding: 15px;
+  background-color: var(--secondary-color);
+  border-radius: 3px;
+  font-weight: bold;
+  transition: color 0.3s ease, background-color 0.3s ease;
+
+  &:hover {
+    color: white;
+    background-color: var(--third-color);
+  }
 }

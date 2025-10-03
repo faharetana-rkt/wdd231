@@ -7,7 +7,7 @@ document.getElementById("currentYear").innerHTML = `&copy; ${year}`;
 const lastModified = document.lastModified;
 document.querySelector(
   "#lastModified"
-).innerHTML = `Last modified on: ${lastModified}`;
+).innerHTML = lastModified;
 
 /*hamburger button*/
 const hamButton = document.querySelector("#menu");
