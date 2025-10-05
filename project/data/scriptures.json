@@ -1,42 +1,49 @@
 [
     {
       "theme": "lonely",
+      "motivation": "You are not alone",
       "verse": "Isaiah 41:10",
       "text": "So do not fear, for I am with you; do not be dismayed, for I am your God. I will strengthen you and help you; I will uphold you with my righteous right hand.",
       "version": "NIV"
     },
     {
       "theme": "sad",
+      "motivation": "Wait on Him",
       "verse": "Psalm 34:18",
       "text": "The Lord is near to the brokenhearted and saves the crushed in spirit.",
       "version": "ESV"
     },
     {
       "theme": "discouraged",
+      "motivation": "Be strong and courageous",
       "verse": "Joshua 1:9",
       "text": "Have I not commanded you? Be strong and courageous. Do not be afraid; do not be discouraged, for the Lord your God will be with you wherever you go.",
       "version": "NIV"
     },
     {
       "theme": "stressed or anxious",
+      "motivation": "Worry not",
       "verse": "Philippians 4:6–7",
       "text": "Don’t worry about anything; instead, pray about everything. Tell God what you need, and thank Him for all He has done. Then you will experience God’s peace, which exceeds anything we can understand.",
       "version": "NLT"
     },
     {
       "theme": "unwell",
+      "motivation": "You will be healthy",
       "verse": "Jeremiah 30:17",
       "text": "But I will restore you to health and heal your wounds, declares the Lord.",
       "version": "NIV"
     },
     {
       "theme": "unmotivated",
+      "motivation": "With all your heart",
       "verse": "Colossians 3:23",
       "text": "Whatever you do, work at it with all your heart, as working for the Lord, not for human masters.",
       "version": "NIV"
     },
     {
       "theme": "tired or weary",
+      "motivation": "He will give you rest",
       "verse": "Matthew 11:28–29",
       "text": "Come to me, all you who are weary and burdened, and I will give you rest. Take my yoke upon you and learn from me, for I am gentle and humble in heart, and you will find rest for your souls.",
       "version": "NIV"
