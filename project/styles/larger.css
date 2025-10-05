@@ -1,0 +1,36 @@
+@media screen and (min-width: 750px) {
+  #menu {
+    display: none;
+  }
+
+  #animateme {
+    display: grid;
+    grid-template-rows: 1fr;
+  }
+
+  .navLink {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .link {
+    border-radius: 5px;
+  }
+
+  #animateme {
+    align-self: center;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-items: center;
+    justify-content: space-around;
+  }
+}

@@ -31,7 +31,7 @@
     <link rel="icon" href="images/bible.png">
     <!-- Scripts for JS -->
     <script src="scripts/script.js" defer></script>
-    <script src="scripts/homepage.js" defer></script>
+    <script src="scripts/homepage.js" type="module"></script>
 </head>
 <body>
     <header>
@@ -49,9 +49,12 @@
         <button id="menu" aria-label="Toggle navigation menu"></button>
     </header>
     <main>
-        <h1>Welcome to Scripture Finder</h1>
-        <div id="daily-scripture">
-            
+        <div class="homepage">
+            <h1>Welcome to Scripture Finder</h1>
+            <img src="images/hero.webp" alt="an image of horizon with the text he is risen">
+            <div id="daily-scripture"></div>
+            <h2>How are you feeling today?</h2>
+            <div id="moods"></div>
         </div>
     </main>
     <footer>
