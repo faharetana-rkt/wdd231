@@ -1,4 +1,5 @@
 @media screen and (min-width: 750px) {
+  /*----------------- HEADER ------------------*/
   #menu {
     display: none;
   }
@@ -26,11 +27,25 @@
     align-self: center;
   }
 
+  /*----------------- FOOTER ------------------*/
   footer {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-items: center;
     justify-content: space-around;
+  }
+
+  /*----------------- HOMEPAGE ------------------*/
+  #moods {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .scripture-card {
+    margin: 20px;
+    flex-shrink: 0;
   }
 }
