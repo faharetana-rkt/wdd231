@@ -7,9 +7,9 @@ const scriptureUrl = "https://faharetana-rkt.github.io/wdd231/project/data/scrip
 // Template function for the renderData function
 function templateDaily(dailyScripture) {
     return `
-    <h3>Your Scripture of the day</h3>
+    <h2>Your Scripture of the day</h2>
     <div id="dailyContainer">
-    <p class="reference">${dailyScripture.verse.details.reference}</p>
+    <p class="reference bold-underline">${dailyScripture.verse.details.reference}</p>
     <p class="verse">${dailyScripture.verse.details.text}</p>
     </div>`;
 }
