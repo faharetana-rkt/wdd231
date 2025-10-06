@@ -1,3 +1,14 @@
+/*---------------- VARIABLES ----------------*/
+:root {
+  --main-color: #5e5b52;
+  --secondary-color: #ffd100;
+  --third-color: #bb6b00;
+  --header-font: "EB Garamond", Georgia, "Times New Roman";
+  --para-font: "Open Sans", Arial, sans-serif;
+  --para-margin: 10px 0 10px 0;
+  --text-margin: 10px;
+}
+
 @media screen and (min-width: 750px) {
   /*----------------- HEADER ------------------*/
   #menu {
@@ -47,5 +58,10 @@
   .scripture-card {
     margin: 20px;
     flex-shrink: 0;
+  }
+
+  .homepage dialog {
+    padding: 0;
+    width: 60%;
   }
 }

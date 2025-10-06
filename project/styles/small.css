@@ -4,7 +4,7 @@
   --secondary-color: #ffd100;
   --third-color: #bb6b00;
   --header-font: "EB Garamond", Georgia, "Times New Roman";
-  --para-font: "Open Sans", Arial, sans-serif; 
+  --para-font: "Open Sans", Arial, sans-serif;
   --para-margin: 10px 0 10px 0;
   --text-margin: 10px;
 }
@@ -14,7 +14,7 @@
 }
 
 .bold-underline {
-  font-size: bold;
+  font-weight: bold;
   text-decoration: underline;
 }
 
@@ -58,8 +58,8 @@ header {
 }
 
 .link:hover {
-    background-color: #ffd100;
-    color: black;
+  background-color: #ffd100;
+  color: black;
 }
 
 #menu {
@@ -87,11 +87,11 @@ header {
 #animateme {
   display: grid;
   grid-template-rows: 0fr;
-  transition: grid-template-rows 0.5s ease-out; 
+  transition: grid-template-rows 0.5s ease-out;
 }
 
 .navLink {
-    overflow: hidden;
+  overflow: hidden;
 }
 
 #animateme.open {
@@ -161,7 +161,9 @@ footer a {
 }
 
 /*----------------- HOMEPAGE ------------------*/
-.homepage h1, .homepage h2, .homepage h3 {
+.homepage h1,
+.homepage h2,
+.homepage h3 {
   font-family: var(--header-font);
   margin-left: var(--text-margin);
 }
@@ -209,4 +211,40 @@ footer a {
 
 .homepage > h2:nth-of-type(1) {
   margin-bottom: 0;
+}
+
+.homepage dialog {
+  padding: 0;
+  width: 90%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.homepage dialog h3 {
+  padding: 10px;
+  margin: 0;
+  background-color: var(--main-color);
+  color: white;
+}
+
+.homepage dialog p {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.close-modal {
+  padding: 5px;
+  border-radius: 3px;
+  position: absolute;
+  border: none;
+  top: 5px;
+  right: 5px;
+  cursor: pointer;
+  background-color: white;
+  margin: 0;
+}
+
+.homepage dialog::backdrop {
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(1px);
 }

@@ -25,7 +25,7 @@ function renderMoods(parentElement, scriptures) {
         const dialog = document.createElement("dialog");
         dialog.innerHTML = `
         <h3>${scripture.motivation}</h3>
-        <p>${scripture.verse}</p>
+        <p class="bold-underline">${scripture.verse}</p>
         <p>${scripture.text}</p>
         <button class="close-modal">❌</button>
         `;
