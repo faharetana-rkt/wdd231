@@ -20,7 +20,11 @@ hamButton.addEventListener("click", () => {
 // Detecting active page
 document.addEventListener("DOMContentLoaded", function () {
   const links = document.querySelectorAll(".link");
-  const currentUrl = window.location.pathname.split("/").pop();
+  let currentUrl = window.location.pathname.split("/").pop();
+
+  if(currentUrl === "") {
+    currentUrl = "index.html";
+  };
 
   links.forEach((link) => {
     if (link.getAttribute("href") === currentUrl) {
