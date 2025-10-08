@@ -21,6 +21,7 @@
 h1 {
   width: 95%;
   border-bottom: solid #bb6b00 5px;
+  font-family: var(--header-font);
 }
 
 /*----------------- HEADER ------------------*/
@@ -248,3 +249,80 @@ footer a {
   background: rgba(0, 0, 0, 0.6);
   backdrop-filter: blur(1px);
 }
+
+/*----------------- FIND ------------------*/
+.find {
+  margin-left: 10px;
+  min-height: 450px;
+  margin-bottom: 50px;
+}
+
+.search {
+  width: max-content;
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  border-radius: 2rem;
+  background: #f6f6f6;
+  width: 80%;
+  margin: 2rem auto;
+  transition: background 0.25s;
+}
+
+.search:focus-within{
+    background: #f1f1f1;
+}
+
+.search-input {
+  font-size: 1.3rem;
+  font-family: var(--para-font);
+  color: black;
+  margin-left: 1rem;
+  outline: none;
+  border: none;
+  background: transparent;
+  flex: 1;
+}
+
+.search-input::placeholder,
+.search-icon {
+  color: rgba(0, 0, 0, 0.60);
+}
+
+.how-to li {
+  padding: 5px;
+}
+
+.how-to h3 {
+  font-family: var(--header-font);
+  font-size: 1.3rem;
+}
+
+.scripture-response {
+  border: 2.5px solid black;
+  padding: 20px;
+  position: relative;
+  border-radius: 20px;
+  width: 70%;
+  margin: 10px auto;
+  box-shadow: 10px 10px var(--secondary-color);
+}
+
+.scripture-response h3 {
+  border-bottom: dashed 2px var(--main-color);
+}
+
+#add-to-favorite {
+  border: none;
+  background: white;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  cursor: pointer;
+  color: var(--main-color);
+  transition: color .5s ease-out;
+  &:hover {
+    color: red;
+  }
+}
+
