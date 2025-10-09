@@ -1,4 +1,5 @@
 import { fetchData, renderData, replaceSpace } from "./utils.mjs";
+import Favorites from "./Favorites.mjs";
 
 export function templateSearch(scripture) {
     return `
@@ -26,5 +27,14 @@ export default class SearchScripture{
     renderScripture(scripture) {
         this.parentElement.innerHTML = "";
         renderData(templateSearch(scripture), this.parentElement);
+        
+        // appending event listener for favorite button at each render
+        const addFavoriteButton = this.parentElement.querySelector("#add-to-favorite");
+        if (addFavoriteButton) {
+            addFavoriteButton.addEventListener("click", () => {
+                const favorites = new Favorites("scriptures");
+                favorites.addToFavorites(scripture);
+            })
+        }
     }
 }

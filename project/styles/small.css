@@ -99,6 +99,10 @@ header {
   grid-template-rows: 1fr;
 }
 
+.link.active {
+  text-decoration: overline;
+}
+
 /*----------------- FOOTER ------------------*/
 footer {
   background-color: #5e5b52;
@@ -324,5 +328,9 @@ footer a {
   &:hover {
     color: red;
   }
+}
+
+.hide {
+  display: none;
 }
 
