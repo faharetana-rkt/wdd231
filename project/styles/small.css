@@ -337,6 +337,7 @@ footer a {
 /*----------------- FAVORITES ------------------*/
 .favorites {
   margin-left: 10px;
+  min-height: 400px;
 }
 
 .scripture-card-favorite {
@@ -368,11 +369,90 @@ footer a {
 
 /*----------------- SUBSCRIBE ------------------*/
 .webform-reg {
-  width: 80%;
-  margin: 20px auto;
+  width: 500px;
+  min-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  border: 2px solid black;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 10px 10px var(--secondary-color);
 }
 
-label, input[type=text], input[type=email], textarea {
+.webform-reg label, .webform-reg input[type=text], .webform-reg input[type=email], .webform-reg textarea {
   display: block;
 }
 
+.webform-reg label {
+  margin: 10px 0 5px 0;
+  font-weight: bold;
+  font-size: 1.2rem
+}
+
+.webform-reg input[type=text], .webform-reg input[type=email], .webform-reg textarea {
+  margin-top: 2.5px;
+  padding: 10px;
+  font-size: 1.1rem;
+  border-radius: 5px;
+  width: 90%;
+}
+
+.webform-reg .radio {
+  margin: 0;
+  padding: 2.5px;
+  font-weight: normal;
+  font-size: 1.1rem;
+}
+
+.webform-reg h4 {
+  margin: 10px 0 2.5px 0;
+  font-size: 1.2rem;
+}
+
+.webform-reg input[type="submit"] {
+  display: block;
+  width: 70%;
+  padding: 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1.3rem;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  background: linear-gradient(var(--secondary-color), var(--third-color));
+  transition: transform 0.5s ease;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+.webform-reg input:required:valid {
+  border-left: 5px solid #5fad56;
+}
+
+.webform-reg input:required {
+  border-left: 5px solid #ef233c;
+}
+
+.webform-reg input:focus {
+  border-left: 2px solid black;
+  outline: none;
+}
+
+/*----------------- THANKS ------------------*/
+#personal-infos {
+  padding-left: 20px;
+  border: 2px solid black;
+  border-radius: 10px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+  margin-top: 50px;
+  font-size: 1.3rem;
+  box-shadow: 10px 10px var(--secondary-color);
+}
