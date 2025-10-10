@@ -33,10 +33,11 @@ export default class Favorites {
     templateFunction(scriptureArray){
         let htmlArray = [];
         scriptureArray.forEach(scripture => {
-            htmlArray.push(`<div class="scripture-card">
+            const refEncoded = encodeURIComponent(scripture.reference);
+            htmlArray.push(`<div class="scripture-card-favorite">
                             <h3 class="bold-underline">${scripture.reference}</h3>
                             <p>${scripture.text}</p>
-                            <button class="remove-from-favorites" data-ref=${scripture.reference}>✖</button>
+                            <button class="remove-from-favorites" data-ref=${refEncoded}>✖</button>
                             </div>`);
         });
         return htmlArray.join(" ");

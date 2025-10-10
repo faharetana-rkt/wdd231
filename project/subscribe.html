@@ -8,15 +8,15 @@
     <meta name="description"
         content="This is the final project titled Scripture finder for WDD231">
     <!-- Facebook meta tags -->
-    <meta property="og:title" content="Scripture finder find page">
+    <meta property="og:title" content="Scripture finder subscribe page">
     <meta property="og:type" content="Website">
     <meta property="og:image" content="https://faharetana-rkt.github.io/wdd231/project/images/blue-scripture.webp">
     <meta property="og:url" content="https://faharetana-rkt.github.io/wdd231/project/find.html">
-    <meta property="og:description" content="This is the find page for the Scripture finder website">
+    <meta property="og:description" content="This is the subscribe page for the Scripture finder website">
     <meta property="og:image:alt" content="Roman 8:38 scripture in a blue sky.">
     <!-- Twitter meta tags -->
     <meta property="twitter:title" content="Scripture finder homepage">
-    <meta property="twitter:description" content="This is the find page for the Scripture finder website">
+    <meta property="twitter:description" content="This is the subscribe page for the Scripture finder website">
     <meta property="twitter:image" content="https://faharetana-rkt.github.io/wdd231/project/images/blue-scripture.webp">
     <meta property="twitter:card" content="summary_large_image">
     <!--Preconnect to google fonts-->
@@ -33,7 +33,6 @@
     <link rel="icon" href="images/bible.png">
     <!-- Scripts for JS -->
     <script src="scripts/script.js" defer></script>
-    <script src="scripts/find.js" type="module"></script>
 </head>
 <body>
     <header>
@@ -51,28 +50,24 @@
         <button id="menu" aria-label="Toggle navigation menu"></button>
     </header>
     <main>
-        <div class="find">
-            <h1>Search for your scripture here.</h1>
-            <div class="search">
-                <span class="search-icon material-symbols-outlined"> search </span>
-                <input
-                class="search-input"
-                type="search"
-                placeholder="Search your scripture"
-                />
-            </div>
-            <div class="how-to">
-                <h3>Examples of search queries:</h3>
-                <ul>
-                    <li><span class="bold-underline">Single verse</span>: john 3:16</li>
-                    <li><span class="bold-underline">Abbreviated book name</span>: jn 3:16</li>
-                    <li><span class="bold-underline">Hyphen and comma</span>: matt 25:31-33,46</li>
-                </ul>
-            </div>
-            <div class="scripture-response">
+        <div class="subscribe">
+            <h1>Subscribe below for your scripture studies.</h1>
+            <form method="get" action="thanks.html" class="webform-reg">
+                <label>First Name* <input type="text" name="fname" required></label>
+                <label>Last Name* <input type="text" name="lname" required></label>
+                <label>Email* <input type="email" name="email" required></label>
 
-            </div>
+                <h3>Select frequency</h3>
+                <label><input type="radio" name="frequency" value="daily" checked> Daily</label>
+                <label><input type="radio" name="frequency" value="weekly"> Weekly</label>
+                <label><input type="radio" name="frequency" value="monthly"> Monthly</label>
 
+                <label>Feedback regarding the website:
+                    <textarea name="feedback" placeholder="Type your feedback here..." rows="5" cols="25"></textarea>
+                </label>
+
+                <input type="submit" value="Subscribe">
+            </form>
         </div>
     </main>
     <footer>

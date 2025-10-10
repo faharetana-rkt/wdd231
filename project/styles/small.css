@@ -334,3 +334,45 @@ footer a {
   display: none;
 }
 
+/*----------------- FAVORITES ------------------*/
+.favorites {
+  margin-left: 10px;
+}
+
+.scripture-card-favorite {
+  width: 90%;
+  margin: 30px auto;
+  border: 2.5px solid;
+  position: relative;
+  padding-left: 20px;
+  border-radius: 20px;
+  box-shadow: 5px 5px var(--secondary-color);
+}
+
+.remove-from-favorites {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border-radius: 5px;
+  background-color: var(--main-color);
+  color: white;
+  cursor: pointer;
+  border: none;
+  transition: background-color .5s ease;
+  font-size: 1.5rem;
+
+  &:hover {
+    background-color: red;
+  }
+}
+
+/*----------------- SUBSCRIBE ------------------*/
+.webform-reg {
+  width: 80%;
+  margin: 20px auto;
+}
+
+label, input[type=text], input[type=email], textarea {
+  display: block;
+}
+

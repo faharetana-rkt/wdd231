@@ -13,8 +13,13 @@ if (scriptureArray.length === 0) {
 
 container.addEventListener("click", (e) => {
     if (!e.target.matches(".remove-from-favorites")) return;
-    const ref = e.target.dataset.ref;
+    const ref = decodeURIComponent(e.target.dataset.ref);
     const htmlArray = favorites.removeFromFavorites(ref);
-    favorites.renderFavorites(htmlArray);
-})
+    if(htmlArray.length === 0) {
+        container.innerHTML = "";
+        container.innerHTML = "<p>No more favorites, go add some.</p>"
+    } else {
+        favorites.renderFavorites(htmlArray, container);
+    }
+});
 
