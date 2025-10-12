@@ -1,4 +1,4 @@
-import SearchScripture from "./scriptureSearch.mjs";
+import SearchScripture from "./ScriptureSearch.mjs";
 
 const search = document.querySelector(".search-input");
 const parentElement = document.querySelector(".scripture-response");
