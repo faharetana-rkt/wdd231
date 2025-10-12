@@ -140,8 +140,10 @@ footer {
   }
 }
 
-.resources h3 {
+.resources p {
   margin-top: 5px;
+  font-weight: 600;
+  font-size: 1.1rem;
 }
 
 footer a {
@@ -368,9 +370,14 @@ footer a {
 }
 
 /*----------------- SUBSCRIBE ------------------*/
+.subscribe {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
 .webform-reg {
-  width: 500px;
-  min-width: 400px;
+  max-width: 500px;
+  min-width: 250px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 50px;
@@ -406,9 +413,10 @@ footer a {
   font-size: 1.1rem;
 }
 
-.webform-reg h4 {
+.webform-reg p {
   margin: 10px 0 2.5px 0;
   font-size: 1.2rem;
+  font-weight: 700;
 }
 
 .webform-reg input[type="submit"] {
